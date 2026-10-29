@@ -1,0 +1,13 @@
+# Tested with Python 3.10, torch 2.7.1 (CUDA 12.8), torchvision 0.22.1.
+# Install torch/torchvision for your CUDA first, e.g.:
+#   pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu128
+pyiqa==0.1.16
+transformers>=4.57
+dreamsim==0.2.1
+numpy
+pillow
+tqdm
+scipy
+opencv-python-headless
+# carvekit (CUTE's background removal) pins old torch/pillow; install it without dependencies:
+#   pip install --no-deps carvekit==4.1.2 && pip install loguru requests typer click
